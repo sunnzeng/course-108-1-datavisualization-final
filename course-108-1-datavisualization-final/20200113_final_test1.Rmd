@@ -1,0 +1,66 @@
+---
+title: "Data Visualization Final Test"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    social: menu
+    source_code: https://git.io/vaZdx
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+
+devtools::install_github("jcheng5/bubbles")
+devtools::install_github("hadley/shinySignals")
+```
+
+Sidebar {.sidebar}
+=======================================================================
+
+
+Dashboard
+=======================================================================
+
+Row
+-----------------------------------------------------------------------
+
+### 必修 {.value-box height=20px}
+
+```{r}
+
+```
+
+### 選修 {.value-box}
+
+
+
+### 通識 {.value-box}
+
+
+
+### 體育 {.value-box}
+
+
+
+### 語言 {.value-box}
+
+
+
+
+Row 
+-----------------------------------------------------------------------
+
+
+### Chart B
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+
+```
+
