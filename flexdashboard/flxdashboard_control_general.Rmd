@@ -58,8 +58,7 @@ Column {data-width=100%}
   width="100%"
   height="100%"
   id=index
-  onclick="gradeFunction()"
-  style=""></iframe>
+  style="display:none"></iframe>
   
 <div id="100gradeForm" width="100%" height="100%" style="display:none"></div>
 <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
@@ -104,4 +103,4 @@ Column {data-width=100%}
   width="100%"
   height="100%"
   id=index
-  style="display:none"></iframe>
+  style=""></iframe>

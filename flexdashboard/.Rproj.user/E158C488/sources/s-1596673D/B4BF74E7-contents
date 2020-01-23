@@ -57,7 +57,9 @@ Column {data-width=100%}
   frameborder="0"
   width="100%"
   height="100%"
-  id=index></iframe>
+  id=index
+  onclick="gradeFunction()"
+  style=""></iframe>
   
 <div id="100gradeForm" width="100%" height="100%" style="display:none"></div>
 <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
@@ -65,4 +67,41 @@ Column {data-width=100%}
     var pymParent = new pym.Parent("100gradeForm", "bsHTML_100/bsHTML_flxdb_100.html", {});
 </script>
 
+<div id="101gradeForm" width="100%" height="100%" style="display:none"></div>
+<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+<script>
+    var pymParent = new pym.Parent("101gradeForm", "bsHTML_101/bsHTML_flxdb_101.html", {});
+</script>
 
+<div id="102gradeForm" width="100%" height="100%" style="display:none"></div>
+<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+<script>
+    var pymParent = new pym.Parent("102gradeForm", "bsHTML_102/bsHTML_flxdb_102.html", {});
+</script>
+
+<div id="103gradeForm" width="100%" height="100%" style="display:none"></div>
+<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+<script>
+    var pymParent = new pym.Parent("103gradeForm", "bsHTML_103/bsHTML_flxdb_100.html", {});
+</script>
+
+
+
+
+<iframe 
+  src="state.html"
+  seamless = "seamless"
+  frameborder="0"
+  width="100%"
+  height="100%"
+  id=index
+  style="display:none"></iframe>
+
+<iframe 
+  src="variety.html"
+  seamless = "seamless"
+  frameborder="0"
+  width="100%"
+  height="100%"
+  id=index
+  style="display:none"></iframe>
