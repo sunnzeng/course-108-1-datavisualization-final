@@ -1,26 +1,105 @@
-<br>
-<h6>各學年度成績</h6>
-<div class="row" style="background-color=transparent">
-  <div class="col-12">
-    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-      <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="true">100學年度</a>
-      <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">101學年度</a>
-      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">102學年度</a>
-      <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">103學年度</a>
-      <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">歷屆排名</a>
-      <br><br>
-      <h6>畢業進度查詢</h6>
-      <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">必選修學分進度</a>
-      <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">通識學分進度</a>
-      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">學分學程進度</a>
-    </div>
-  </div>
-</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col" colspan="2" rowspan="2">科目名稱</th>
+      <th scope="col" colspan="2">第一學期</th>
+      <th scope="col" colspan="2">第二學期</th>
+    </tr>
+    <tr>
+      <th scope="col">學分</th>
+      <th scope="col">成績</th>
+      <th scope="col">學分</th>
+      <th scope="col">成績</th>
+    </tr>
 
-<div class="row">
-  <div class="col-12">
-    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-      
-    </div>
-  </div>
-</div>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">必</th>
+      <td>商事法</td>
+      <td>3</td>
+      <td>81</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">選</th>
+      <td>商用英文</td>
+      <td>2</td>
+      <td>87</td>
+      <td>2</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <th scope="row">選</th>
+      <td>經濟成長</td>
+      <td>3</td>
+      <td>74</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">選</th>
+      <td>英語精進課程</td>
+      <td>0</td>
+      <td>86</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">選</th>
+      <td>日語(2)</td>
+      <td>2</td>
+      <td>86</td>
+      <td>2</td>
+      <td>76</td>
+    </tr>
+    <tr>
+      <th scope="row">選</th>
+      <td>財務管理</td>
+      <td>3</td>
+      <td>86</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">選</th>
+      <td>社會行銷</td>
+      <td></td>
+      <td></td>
+      <td>3</td>
+      <td>95</td>
+    </tr>
+    <tr>
+      <th scope="row">選</th>
+      <td>中級財務管理</td>
+      <td></td>
+      <td></td>
+      <td>3</td>
+      <td>85</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="2">學期成績總平均</td>
+      <td></td>
+      <td>82.2</td>
+      <td></td>
+      <td>85.2</td>
+    </tr>
+    <tr>
+      <td colspan="2">修習學分</td>
+      <td>13</td>
+      <td></td>
+      <td>10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">實得學分</td>
+      <td>13</td>
+      <td></td>
+      <td>10</td>
+      <td></td>
+    </tr>
+  </tfoot>	  
+</table>
