@@ -43,8 +43,9 @@ library(widgetframe)
     var pymParent = new pym.Parent("example", "bsHTML_sidebar/bsHTML_flxdb.html", {});
 </script>
  
-
+<div>
 <img src="assets/logo2.png" width="100%" height="100%"></img>
+</div>
 
 Column {data-width=100%}
 -----------------------------------------------------------------------
@@ -55,7 +56,13 @@ Column {data-width=100%}
   seamless = "seamless"
   frameborder="0"
   width="100%"
-  height="100%"></iframe>
-
+  height="100%"
+  id=index></iframe>
+  
+<div id="100gradeForm" width="100%" height="100%" style="display:none"></div>
+<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+<script>
+    var pymParent = new pym.Parent("100gradeForm", "bsHTML_100/bsHTML_flxdb_100.html", {});
+</script>
 
 
