@@ -1,52 +1,3 @@
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-
-<meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-
-<title>成績單</title>
-
-<!--以HTML語法寫下要放在head的內容, 不可使用任何code chunks-->
-
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<!--中文字體，必需在所有style sheets之後以取得優先權-->
-<style>
-  body {
-  font-family: 'Noto Sans TC', sans-serif; background-color:transparent;
-    
-  }
-</style>
-
-
-
-
-
-
-
-
-
-</head>
-
-<body>
-
-
-<!--以HTML語法寫下要放在body一開頭的內容, 不可使用任何code chunks-->
-
-
-<h1 class="title toc-ignore">成績單</h1>
-
-
-
 <br>
 <h6>各學年度成績</h6>
 <div class="row" style="background-color=transparent">
@@ -73,16 +24,3 @@
     </div>
   </div>
 </div>
-
-<!--以HTML語法寫下要放在body結尾的內容, 不可使用任何code chunks-->
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript" src="js/init.js"></script>
-
-
-<!-- code folding -->
-
-
-
-</body>
-</html>

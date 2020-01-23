@@ -1,5 +1,5 @@
 ---
-title: "成績單"
+title: ""
 output: 
   html_document:
     theme: null
