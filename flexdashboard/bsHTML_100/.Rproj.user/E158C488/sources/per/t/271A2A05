@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1579770698623.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1014025143",
+    "id" : "271A2A05",
+    "lastKnownWriteTime" : 1579770613,
+    "last_content_update" : 1579770613,
+    "path" : "~/GitHub/course-108-1-datavisualization-final/bsHTML/bsHTML_flxdb.Rmd",
+    "project_path" : "bsHTML_flxdb.Rmd",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
