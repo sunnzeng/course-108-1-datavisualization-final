@@ -29,7 +29,9 @@ library(widgetframe)
 
 控制台 {.sidebar data-width=200}
 ------------------------
+
 <a class="btn btn-lg btn-outline-secondary btn-block" href="https://sunnzeng.github.io/course-108-1-datavisualization-final/flexdashboard/flxdashboard_control.html">HOME</a>
+
 ```{r, eval=F, echo=FALSE}
 "./bsHTML/bsHTML_flxdb.html" %>%
   to_frameableHTML(regularHTML = T) # 非htmlwidget要設T
@@ -41,6 +43,7 @@ library(widgetframe)
     var pymParent = new pym.Parent("example", "bsHTML_sidebar_1/bsHTML_flxdb.html", {});
 </script>
  
+ 
 <div>
 <img src="assets/logo2.png" width="100%" height="100%"></img>
 </div>
@@ -48,11 +51,12 @@ library(widgetframe)
 Column {data-width=100%}
 -----------------------------------------------------------------------
 
-<div id="100gradeForm" width="100%" height="100%"></div>
-<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
-<script>
-    var pymParent = new pym.Parent("100gradeForm", "bsHTML_100/bsHTML_flxdb_100.html", {});
-</script>
- 
-
-
+<iframe 
+  src="index.html"
+  scrolling = "no" 
+  seamless = "seamless"
+  frameborder="0"
+  width="100%"
+  height="100%"
+  id=index
+  style=""></iframe>

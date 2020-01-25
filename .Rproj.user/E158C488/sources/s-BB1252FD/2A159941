@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
     "contents" : "",
-    "created" : 1579941028277.000,
+    "created" : 1579944531079.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2943063223",
-    "id" : "E380748C",
+    "hash" : "0",
+    "id" : "2A159941",
     "lastKnownWriteTime" : 1579944221,
-    "last_content_update" : 1579944221962,
+    "last_content_update" : 1579944221,
     "path" : "~/GitHub/course-108-1-datavisualization-final/flexdashboard/flxdashboard_control.Rmd",
     "project_path" : "flexdashboard/flxdashboard_control.Rmd",
     "properties" : {
