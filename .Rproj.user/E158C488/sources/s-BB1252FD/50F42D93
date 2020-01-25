@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3678350692",
+    "hash" : "0",
     "id" : "50F42D93",
-    "lastKnownWriteTime" : 1579941133,
-    "last_content_update" : 1579941133840,
+    "lastKnownWriteTime" : 1579941294,
+    "last_content_update" : 1579941294704,
     "path" : "~/GitHub/course-108-1-datavisualization-final/flexdashboard/bsHTML_sidebar_1/external/within_body/bsContent_flxdb.html",
     "project_path" : "flexdashboard/bsHTML_sidebar_1/external/within_body/bsContent_flxdb.html",
     "properties" : {
-        "cursorPosition" : "39,155",
-        "scrollLine" : "23"
+        "cursorPosition" : "21,156",
+        "scrollLine" : "9"
     },
     "read_only" : false,
     "read_only_alternatives" : [
