@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1579960426854.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3629484495",
+    "id" : "DD9FD69A",
+    "lastKnownWriteTime" : 1579932243,
+    "last_content_update" : 1579932243,
+    "path" : "~/GitHub/course-108-1-datavisualization-final/flexdashboard/bsHTML_sidebar_1/bsHTML_flxdb.Rmd",
+    "project_path" : "flexdashboard/bsHTML_sidebar_1/bsHTML_flxdb.Rmd",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
