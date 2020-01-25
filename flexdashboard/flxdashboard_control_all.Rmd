@@ -51,10 +51,10 @@ Column {data-width=100%}
 -----------------------------------------------------------------------
 
 <iframe 
-  src="rate.html"
+  src="image/rate.svg"
   seamless = "seamless"
   scrolling= "no"
   frameborder="0"
   width="100%"
-  height="100%"
-  style=""></iframe>
+  height="100%"></iframe>
+
