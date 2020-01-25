@@ -29,9 +29,7 @@ library(widgetframe)
 
 控制台 {.sidebar data-width=200}
 ------------------------
-
-### 成績單
-
+<a class="btn btn-lg btn-outline-secondary btn-block" href="https://sunnzeng.github.io/course-108-1-datavisualization-final/flexdashboard/flxdashboard_control.html">HOME</a>
 ```{r, eval=F, echo=FALSE}
 "./bsHTML/bsHTML_flxdb.html" %>%
   to_frameableHTML(regularHTML = T) # 非htmlwidget要設T

@@ -7,13 +7,13 @@
     "folds" : "",
     "hash" : "0",
     "id" : "B4308283",
-    "lastKnownWriteTime" : 1579941774,
-    "last_content_update" : 1579941774921,
+    "lastKnownWriteTime" : 1579943515,
+    "last_content_update" : 1579943515839,
     "path" : "~/GitHub/course-108-1-datavisualization-final/flexdashboard/flxdashboard_control_elective.Rmd",
     "project_path" : "flexdashboard/flxdashboard_control_elective.Rmd",
     "properties" : {
-        "cursorPosition" : "47,6",
-        "scrollLine" : "30"
+        "cursorPosition" : "31,173",
+        "scrollLine" : "21"
     },
     "read_only" : false,
     "read_only_alternatives" : [
