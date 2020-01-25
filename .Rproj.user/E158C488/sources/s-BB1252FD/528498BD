@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1579943551744.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "528498BD",
+    "lastKnownWriteTime" : 1579943660,
+    "last_content_update" : 1579943660701,
+    "path" : "~/GitHub/course-108-1-datavisualization-final/flexdashboard/bsHTML_sidebar_1/external/in_header/header.html",
+    "project_path" : "flexdashboard/bsHTML_sidebar_1/external/in_header/header.html",
+    "properties" : {
+        "cursorPosition" : "12,41",
+        "scrollLine" : "3"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 10,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "html"
+}

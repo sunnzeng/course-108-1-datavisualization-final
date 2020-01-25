@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "3536423557",
     "id" : "E380748C",
-    "lastKnownWriteTime" : 1579943445,
-    "last_content_update" : 1579943445938,
+    "lastKnownWriteTime" : 1579943833,
+    "last_content_update" : 1579943833139,
     "path" : "~/GitHub/course-108-1-datavisualization-final/flexdashboard/flxdashboard_control.Rmd",
     "project_path" : "flexdashboard/flxdashboard_control.Rmd",
     "properties" : {
-        "cursorPosition" : "32,0",
-        "scrollLine" : "24"
+        "cursorPosition" : "42,47",
+        "scrollLine" : "35"
     },
     "read_only" : false,
     "read_only_alternatives" : [
