@@ -1,0 +1,177 @@
+---
+title: "Untitled"
+author: "Joey"
+date: "2020/1/15"
+output: html_document
+---
+
+
+```{r basic setup, message=FALSE, echo=TRUE, eval=T}
+library(dplyr); library(stringr); library(ggplot2); library(plotly); library(lubridate); library(readr); library(colorspace); library(grDevices); library(shiny); library(shinyjs); library(scales)
+library(tidyr); library(showtext); library(tidyverse); library(colorspace);
+library(rvest);library(XML);library(xml2);library(listviewer)
+
+
+font_add("QYuan","C:/Users/user/Desktop/cwTeXQYuan-Medium.ttf") # 新增字體
+showtext_auto(enable=TRUE) #啟用字體
+theme_set(theme_classic())
+knitr::opts_chunk$set(out.width='80%', fig.asp=.75, fig.align='center', fig.showtext=T)
+
+#source("https://www.dropbox.com/s/mdx4777ugnluspz/webApplications.R?dl=1", encoding = "UTF-8")
+```
+
+
+
+
+
+```{r}
+load("C:/Users/user/Downloads/finalProject.Rda")
+
+## 資料讀入
+#load("finalProject.Rda")
+list() -> datacleaning
+
+##經濟系學生資料取出
+grepl("經濟",gradeData$系級) %>%
+  gradeData[.,] -> datacleaning$origin
+
+##必選修三大類別整理
+(datacleaning$origin$`必選修類別（必／選／通）` == "必")%>%
+  datacleaning$origin[.,] -> datacleaning$group$必修
+(datacleaning$origin$`必選修類別（必／選／通）` == "選")%>%
+  datacleaning$origin[.,] -> datacleaning$group$選修
+```
+
+
+```{r}
+datacleaning$group$必修 %>%
+  group_by(學年) %>%
+  summarise(
+    學分數 = sum(學分數)
+  ) -> 必修
+```
+
+
+```{r}
+courseName <- c("經濟學原理","微積分","會計學","個體經濟學","總體經濟學","統計學","公共經濟學","國際經濟學","貨幣銀行學","經濟思想史","商事法")
+pass <-c("pass","pass","pass","pass","pass","pass","pass","pass","pass","pass","nopass")
+color <- c("已修過","已修過","已修過","已修過","已修過","已修過","已修過","已修過","已修過","已修過","未修過")
+
+Major <-data.frame(courseName,pass,color)
+```
+
+```{r}
+
+#choose_palette(gui="shiny")
+colorspace::diverging_hcl(n = 2, h = c(255, 20), c = c(76, 31), l = c(29, 47), power = c(1.65, 1.25), register = "Custom-Palette")
+
+
+
+Major %>%
+  ggplot()+
+  geom_point(aes(x = 1,y = courseName,color = color),size = 6,shape = 19)+
+  scale_color_discrete_diverging (palette = "Custom-Palette")+
+  labs(
+    title = "必修修習狀況"
+  )+
+  theme(
+    title = element_text(face = "bold",size = 32),
+    axis.title = element_blank(),
+    axis.text.x = element_blank(),
+    axis.ticks = element_blank(),
+    axis.line = element_blank(),
+    legend.title = element_blank(),
+    axis.text.y = element_text(size = 20),
+    plot.background = element_rect(fill = "#FFF5EE"),
+    panel.background = element_rect(fill = "#FFF5EE"),
+    legend.background = element_rect(fill = "#FFF5EE")
+  )
+
+```
+
+```{r}
+datacleaning$group$選修 %>%
+  group_by(學年) %>%
+  summarise(
+    學分數 = sum(學分數)
+  ) -> optionalNumber
+學分數 <- c(72)
+總學分 <- c("總學分")
+學分數二 <- c(32)
+總學分 <- c("總學分")
+class <- data.frame(學分數,總學分,學分數二,總學分)
+
+```
+
+
+```{r}
+#choose_palette(gui="shiny")
+
+
+class %>%
+  ggplot()+
+  geom_bar(mapping = aes(x = 總學分,y = 學分數),width = 0.5,fill = "#AAAAAA",stat = "identity")+
+  coord_flip()+
+  theme(
+    axis.title = element_blank(),
+    axis.line = element_blank(),
+    axis.text = element_blank(),
+    axis.ticks = element_blank(),
+    legend.title = element_blank(),
+    legend.text = element_blank(),
+    legend.position = "none",
+    plot.title = element_text(size = 40,face = "bold")
+    )+
+  labs(
+    title = "選修進度"
+  )+
+  geom_hline(aes(yintercept=54),linetype="twodash",size = 0.1,color="red",length = 2)+
+  geom_bar(mapping = aes(x = 總學分,y = 學分數二),width = 0.5,fill = "#D2691E",stat = "identity")+
+  annotate(
+    "text",x = 1.28,y = 59,label = "畢業門檻",col = "red"
+  )+  
+  annotate(
+     "text",x = 1,y = 16,label = "59.3%",col = "white",size = 15
+  )
+```
+
+
+```{r}
+ datacleaning$origin %>%
+  group_by(學年) %>%
+  summarise(
+    修習學分數 = sum(學分數)
+  ) -> graduation
+
+```
+
+
+```{r}
+學分數 <- c(140)
+總學分 <- c("總學分")
+學分數二 <- c(121)
+總學分 <- c("總學分")
+graduationFinal <- data.frame(學分數,總學分,學分數二,總學分)
+```
+
+```{r}
+graduationFinal %>%
+  ggplot()+
+  geom_bar(mapping = aes(x = 總學分,y = 學分數),width = 0.5,fill = "#E0E0E0",stat = "identity")+
+  coord_flip()+
+  theme(
+  axis.title = element_blank(),
+  axis.line = element_blank(),
+  axis.text = element_blank(),
+  axis.ticks = element_blank(),
+  legend.title = element_blank(),
+  legend.text = element_blank(),
+  legend.position = "none",
+  plot.title = element_text(size = 32,face = "bold")
+  )+
+  geom_bar(mapping = aes(x = 總學分,y = 學分數二),width = 0.5,fill = "#D2691E",stat = "identity")+  
+  annotate(
+     "text",x = 1,y = 60.5,label = "86.4%",col = "white",size = 15
+  )
+```
+
