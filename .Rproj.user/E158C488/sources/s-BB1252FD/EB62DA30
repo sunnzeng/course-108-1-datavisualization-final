@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1579940939504.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1738414780",
+    "id" : "EB62DA30",
+    "lastKnownWriteTime" : 1579941082,
+    "last_content_update" : 1579941082043,
+    "path" : "~/GitHub/course-108-1-datavisualization-final/flexdashboard/flxdashboard_control_all.Rmd",
+    "project_path" : "flexdashboard/flxdashboard_control_all.Rmd",
+    "properties" : {
+        "cursorPosition" : "58,15",
+        "scrollLine" : "39"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
