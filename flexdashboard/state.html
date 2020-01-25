@@ -5,7 +5,7 @@
 <title>必選修狀況</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/82e7182340.js" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script> 
@@ -36,36 +36,37 @@ $(document).ready(function(){
 </script>
     <style>
         body{
-            font-family: 'Noto Serif TC', serif;
+            font-family: 'Noto Sans TC', sans-serif;
+            color: #444444
         }
         .container-0{
-            background-color: #FFE4B5;
+            background-color: #FFFFFF;
             width: 100%;
             z-index: 0
         }
         .major{
-            background-color: antiquewhite;
+            background-color: #FFF5EE;
             z-index: 1
         }
         .elective{
-            background-color: cadetblue;
+            background-color: #FFFFFF;
             z-index: 1
         }
         .flip{
-            background-color: azure;
+            background-color: #FFFACD;
             margin: 10px 0 0 0;
         }
         .flip1{
-            background-color: burlywood;
+            background-color: #FFFACD;
             margin: 10px 0 0 0;
         }
         .flip2{
-            background-color: crimson;
+            background-color: #FFFACD;
             margin: 10px 0 0 0;
         }
         .flip3{
-            background-color: darkgray;
-            margin: 10px 0 0 0;
+            background-color: #DEB887;
+            margin: 10px 0 10px 0;
         }
         .panel{
             display: none;
@@ -83,17 +84,21 @@ $(document).ready(function(){
     </head>
     <body>
         <div class="row container-0">
-            <div class="col-sm-4 major">
-                <h2 style="margin: 5px">必修修習進度</h2>
-                <img style="width: 100%; margin: 5px 30px 0 10px" src="image/majorstate.png">
+            <div class="col-sm-3 major">
+                <h2 style="padding: 15px 0 0 20px;"><i class="fas fa-book-reader" ></i> 必修修習進度</h2>
+                <div class="badge" style="padding: 30px">
+                    <h4><span class="badge badge-pill"><i class="fas fa-circle" style="color: #0000CC"></i>已修過</span>
+                    <span class="badge badge-pill"><i class="fas fa-circle" style="color: maroon"></i>未修過</span></h4>
+                </div>
+                <img style="width: 80%; margin: 0 0 0 30px" src="image/majorstate.png">
             </div>
-            <div class="col-sm-8 elective">
+            <div class="col-sm-9 elective">
                 <table class="table">
-                    <th scope="row" colspan="5"><h2>選修修習進度</h2></th>
-                    <td><h2>57/54 學分</h2></td>
+                    <th scope="row" colspan="5"><h2 style="padding: 5px 0 0 20px"><i class="fas fa-book-reader"></i> 選修修習進度</h2></th>
+                    <td><h2>32/54 學分</h2></td>
 </table>
                 <div><img src="image/electivestate.png" style="width: 100%; height: 200px"></div>
-                <div class="flip" style="text-align: center ;font-size: 30px">已修習系上選修</div>
+                <div class="flip" style="text-align: center ;font-size: 30px">已修習系上選修 <i class="fas fa-arrow-circle-down"></i></div>
                 <div class="panel">
                 <table class="table table-sm">
     <tr>
@@ -156,7 +161,7 @@ $(document).ready(function(){
     </tr>
                     </table>
                 </div>
-                <div class="flip1" style="text-align: center; font-size: 30px">已修習共同選修</div>
+                <div class="flip1" style="text-align: center; font-size: 30px">已修習共同選修 <i class="fas fa-arrow-circle-down"></i></div>
                 <div class="panel1">
 <table class="table table-sm">
     <tr>
@@ -198,7 +203,7 @@ $(document).ready(function(){
     </tr>
 </table>
                 </div>
-                <div class="flip2" style="text-align: center; font-size: 30px">已修習外系選修</div>
+                <div class="flip2" style="text-align: center; font-size: 30px">已修習外系選修 <i class="fas fa-arrow-circle-down"></i></div>
                 <div class="panel2">
 <table class="table table-sm">
     <tr>
@@ -267,7 +272,7 @@ $(document).ready(function(){
       <td>3</td>
     </tr>  
                     </table></div>
-                <div class=flip3 style="text-align: center; font-size: 30px">專業領域</div>
+                <div class=flip3 style="text-align: center; font-size: 30px">專業領域 <i class="fas fa-arrow-circle-down"></i></div>
                 <div class="panel3">
 <table class="table table-sm">
   <thead  class="thead-light">

@@ -51,22 +51,6 @@ Column {data-width=100%}
 -----------------------------------------------------------------------
 
 <iframe 
-  src="index.html"
-  scrolling = "no" 
-  seamless = "seamless"
-  frameborder="0"
-  width="100%"
-  height="100%"
-  id=index
-  style="display:none"></iframe>
-  
-<div id="100gradeForm" width="100%" height="100%" style="display:none"></div>
-<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
-<script>
-    var pymParent = new pym.Parent("100gradeForm", "bsHTML_100/bsHTML_flxdb_100.html", {});
-</script>
-
-<iframe 
   src="state.html"
   seamless = "seamless"
   frameborder="0"

@@ -2,33 +2,46 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>通識|體育|語文</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+<title>必選修狀況</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/82e7182340.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("d-1").click(function(){
+      $("text2").css("display","none");
+  });
+});
+</script>
     <style>
         body{
-            font-family: 'Noto Serif TC', serif;
+            font-family: 'Noto Sans TC', sans-serif;
+            color: #444444
         }
         .container-0{
-            background-color: #FFE4B5;
-            width: 800px;
+            width: 100%;
             height: 550px;
             z-index: 0
         }
         .variety{
-            background-color: #FFF0F5;
+            background-color: #FFFFFF;
             z-index: 1
         }
         .other{
-            background-color: #E6E6FA;
+            background-color: #FFF5EE;
+            position: relative;
             z-index: 1
         }
         .cate{
-            position: absolute;
-            width: 90%;
-            margin: 135px 30px 10px 30px;
+            position: relative;
+            width: 80%;
+            margin: 50px 30px 10px 60px;
             z-index: 2;
+        }
+        .choose{
+            position: relative;
         }
         .title{
             font-size: 40px;
@@ -36,20 +49,25 @@
             width: auto;
         }
         .text{
-            background-color: #FAF0E6;
+            background-color: #FAEBD7;
             z-index: 3;
-            margin: 10px 0 0 0;
-            padding: 0px;
+            margin: 10px 0 20px 0;
+            padding: 10px 0 10px 5px;
+        }
+        .text2{
+            position: relative;
+            margin: 10px 0 0px 10px;
         }
         .btn-group{
             margin: 5px 0px 0px 10px;
         }
         .gym{
-            width: 240px;
+            width: 90%;
             margin: 10px 0px 10px 0px;
-            background-color: blanchedalmond;
+            background-color: #FFDEAD;
             position: absolute;
-            z-index: 3
+            z-index: 3;
+            color: #444444
         }
         .gym-title{
             margin: 10px;
@@ -60,11 +78,15 @@
             font-size: 15px
         }
         .lan{
-            background-color: aquamarine;
+            background-color: #FFDAB9;
             position: relative;
             z-index: 3;
-            margin: 330px 0 0 0;
-            width: 240px;
+            margin: 330px 0 10px 0;
+            width: 98%;
+            color: #444444
+        }
+        .alld{
+            color: #444444;
         }
     </style>
     </head>
@@ -72,37 +94,71 @@
         <div class="row container-0">
             <div class="col-sm-8 variety">
                 <div class="row">
-                    <div class="col-sm-8 "><div class="title">通識向度累積圖</div></div>
-                <div class="col-sm-4 ">
+                    <div class="col-sm-8">
+                        <div class="title" style="color: #444444"><i class="fas fa-shapes"></i> 通識向度累積圖</div>
+                        <img class="cate" src="./image/cate.png">
+                </div>
+                <div class="col-sm-4 choose">
                     <div class="text">
                 <div class="btn-group">
                     <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         向度選擇
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" >向度一</a>
-                        <a class="dropdown-item" >向度二</a>
-                        <a class="dropdown-item" >向度三</a>
-                        <a class="dropdown-item" >向度四</a>
-                        <a class="dropdown-item" >向度五</a>
-                        <a class="dropdown-item" >向度六</a>
+                        <button class="dropdown-item d-1" >向度一</button>
+                        <button class="dropdown-item d-2" >向度二</button>
+                        <button class="dropdown-item d-3" >向度三</button>
+                        <button class="dropdown-item d-4" >向度四</button>
+                        <button class="dropdown-item d-5" >向度五</button>
+                        <button class="dropdown-item d-6" >向度六</button>
                     </div>
                     </div>
-                        <table class="table table-borderless">
-                            <tbody>
+                         <div class="text2" style="color: #444444">
+                        <h5>請選擇向度</h5>
+                    </div>
+                        <table class="table table-borderless alld d1">
                                 <tr>
                                     <th scope="row">向度一</th>
                                     <td>5學分</td>
-                            </tbody>
+                                </tr>
+                        </table>
+                        <table class="table table-borderless alld d2">
+                                <tr class="alld d2">
+                                    <th scope="row">向度二</th>
+                                    <td>3學分</td>
+                                </tr>
+                        </table>
+                        <table class="table table-borderless alld d3">
+                                <tr class="alld d3">
+                                    <th scope="row">向度三</th>
+                                    <td>3學分</td>
+                                </tr>
+                        </table>
+                        <table class="table table-borderless alld d4">
+                                <tr class="alld d4">
+                                    <th scope="row">向度四</th>
+                                    <td>0學分</td>
+                                </tr>
+                        </table>
+                        <table class="table table-borderless alld d5">
+                                <tr class="alld d5">
+                                    <th scope="row">向度五</th>
+                                    <td>2學分</td>
+                                </tr>
+                        </table>
+                        <table class="table table-borderless alld d6">
+                                <tr class="alld d6">
+                                    <th scope="row">向度六</th>
+                                    <td>0學分</td>
+                                </tr>
                         </table>
                     </div>
+                </div>
             </div>
-                <img class="cate" src="./image/cate.png">
-                </div>
-                </div>
+            </div>
             <div class="col-sm-4 other">
                 <div class="gym">
-                    <span class="gym-title">體育</span>
+                    <span class="gym-title"><i class="fas fa-running"></i> 體育</span>
                     <span class="gym-text"><sapn style="font-size: 20px">4</sapn>/4門</span>
                     <table class="table">
                         <thead>
@@ -132,7 +188,7 @@
                     </table>
                 </div>
                 <div class="lan">
-                    <span class="gym-title">語言</span>
+                    <span class="gym-title"><i class="fas fa-language"></i> 語言</span>
                     <span class="gym-text"><sapn style="font-size: 20px">4</sapn>/4門</span>
                     <table class="table">
                         <thead>
