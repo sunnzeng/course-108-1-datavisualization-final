@@ -1,8 +1,8 @@
 {
-    "path" : "~/GitHub/course-108-1-datavisualization-final",
+    "path" : "~/GitHub/course-108-1-datavisualization-final/flexdashboard/bsHTML_sidebar_1",
     "sortOrder" : [
         {
-            "ascending" : true,
+            "ascending" : false,
             "columnIndex" : 2
         }
     ]
